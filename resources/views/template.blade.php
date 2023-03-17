@@ -103,11 +103,15 @@
             }
 
         </style>
+<<<<<<< HEAD
+        <link href="{{ asset('/css/products_page_style.css') }}" rel="stylesheet">
+=======
         <script>
 
         </script>
         
 
+>>>>>>> main
     </head>
     <body class="antialiased">
         <div id="header-area">
