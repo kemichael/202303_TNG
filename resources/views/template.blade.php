@@ -35,6 +35,13 @@
                 FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
             });
 
+        </style>
+
+        <link href="{{ asset('/css/products_page_style.css') }}" rel="stylesheet">
+
+        <script>
+
+
             // ページが読み込まれたらすぐに動かしたい場合の記述
             $(window).on('load', function () {
                 FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/

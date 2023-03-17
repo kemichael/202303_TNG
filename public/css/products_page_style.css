@@ -1,0 +1,104 @@
+#products {
+    background-color: #000;
+    font-size: 2em;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+.message {
+    scroll-snap-align: start;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 180px;
+    width: 100vw;
+    height: 100vh;
+}
+.message p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+.staff-recommend {
+    width: 100vw;
+    display: flex;
+}
+.img1, .img2 {
+    position: absolute;
+    height: 80%;
+    top: 0;
+    left: 0;
+    animation: anime 10s 0s infinite;
+    z-index: 0;
+    opacity: 0;
+}
+.img2 {
+    animation-delay: 5s;
+}
+@keyframes anime {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+        transform: scale(1.2);
+        z-index: 10;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+.recommend-content {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.explanation {
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    padding: 100px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .75);
+    color: #fff;
+    font-size: .8em;
+    top: 0;
+    right: 0;
+    z-index: 20;
+}
+
+/* 横スクロール用ボタン */
+#staff-recommend-1 {
+    width: 100%;
+    height: 100%;
+}
+.leftbutton,.rightbutton {
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 10px;
+}
+.leftbutton {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 1px 1px 1px #888;
+}
+.rightbutton {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    box-shadow: -1px 1px 1px #888;
+}
