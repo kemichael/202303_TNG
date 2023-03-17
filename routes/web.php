@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::view('/top', 'top');
 Route::view('/products', 'products');
+Route::view('/news', 'news');
