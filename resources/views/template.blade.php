@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
 
         <title>@yield('title')</title>
 
@@ -11,6 +12,8 @@
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="css/template.css" rel="stylesheet" type="text/css">
         <link href="css/top.css" rel="stylesheet" type="text/css">
+        <link href="{{ asset('/css/products_page_style.css') }}" rel="stylesheet">
+
 
         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
         <!-- Styles -->
@@ -35,12 +38,6 @@
                 FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
             });
 
-        </style>
-
-        <link href="{{ asset('/css/products_page_style.css') }}" rel="stylesheet">
-
-        <script>
-
 
             // ページが読み込まれたらすぐに動かしたい場合の記述
             $(window).on('load', function () {
@@ -64,8 +61,6 @@
         <div>
             @yield('content')
         </div>
-        <div id="footer-area">
-        
-        </div>
+
     </body>
 </html>
