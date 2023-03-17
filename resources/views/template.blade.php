@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>@yield('title')</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,10 +21,9 @@
         </style>
     </head>
     <body class="antialiased">
-        @section('header')
-            ここにいろいろボタンとか作っておきます
-        @show
-
+        ぼーどげーむの企業です
+            <button>きぎょう</button>
+            <button>商品</button>
         <div>
             @yield('content')
         </div>
